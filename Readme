@@ -1,4 +1,4 @@
-# PrestaShop Deployment on AWS
+## PrestaShop Deployment on AWS# #
 
 Preliminary assignment for the Cyber Security Intern role at Bincom Dev Center.
 **Author:** Adebisi Damilola Abiola
@@ -7,7 +7,7 @@ A working PrestaShop e-commerce store deployed on AWS using only Free Tier resou
 
 **Live store:** http://51.21.182.10
 
-**Full write-up with screenshots:** [PrestaShop_AWS_Deployment_Documentation.pdf](./PrestaShop_AWS_Deployment_Documentation.pdf)
+**Full write-up with screenshots:** [PrestaShop_AWS_Deployment_Documentation.pdf](./PrestaShop_AWS_Deployment_Documentation.pdf.pdf)
 
 ---
 
