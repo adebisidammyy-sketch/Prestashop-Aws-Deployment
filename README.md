@@ -1,6 +1,4 @@
 ## PrestaShop Deployment on AWS# #
-
-Preliminary assignment for the Cyber Security Intern role at Bincom Dev Center.
 **Author:** Adebisi Damilola Abiola
 
 A working PrestaShop e-commerce store deployed on AWS using only Free Tier resources. The database runs on a separate server from the web application and is not exposed to the internet.
