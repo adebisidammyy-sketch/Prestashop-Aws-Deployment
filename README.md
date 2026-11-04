@@ -55,6 +55,14 @@ Successfully logged in to the PrestaShop admin dashboard.
 
 ![Admin dashboard](images/admin-dashboard.png)
 
+### Resources provisioned on Free Tier
+RDS MySQL with Full configuration and the Free Tier template.
+
+![RDS free tier configuration](images/rds-free-tier.png)
+
+The EC2 web server running with all status checks passed.
+
+![EC2 instance running](images/ec2-running.png)
 Full documentation with all 17 screenshots is in the [PDF](./PrestaShop_AWS_Deployment_Documentation.pdf.pdf).
 
 ## Security decisions
