@@ -23,6 +23,40 @@ Internet ──(80/443)──> EC2: prestashop-web-sg ──(3306)──> RDS: p
                        Apache + PHP 8.5                    MySQL, no public access
 ```
 
+## Evidence
+
+### 1. Database is not publicly accessible
+RDS Public Access is set to **No**, so the database has no public IP.
+
+![RDS public access set to No](images/rds-public-access.png)
+
+### 2. Web server firewall rules
+Only SSH, HTTP and HTTPS are open on the EC2 security group.
+
+![EC2 security group inbound rules](images/ec2-security-group.png)
+
+### 3. Database only trusts the web server
+The RDS security group allows port 3306 only from the EC2 security group, not from an IP range.
+
+![RDS security group rule](images/rds-sg-rule.png)
+
+### 4. Web server connects to the remote database
+The PrestaShop installer successfully connected to the RDS instance.
+
+![Database is connected](images/db-connected.png)
+
+### 5. Live storefront
+The store is publicly reachable at http://51.21.182.10.
+
+![Live storefront](images/storefront-live.png)
+
+### 6. Admin back office
+Successfully logged in to the PrestaShop admin dashboard.
+
+![Admin dashboard](images/admin-dashboard.png)
+
+Full documentation with all 17 screenshots is in the [PDF](./PrestaShop_AWS_Deployment_Documentation.pdf.pdf).
+
 ## Security decisions
 
 - **Database isolation:** RDS has Public Access set to **No**, so it has no public IP and can't be reached from the internet.
